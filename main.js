@@ -26,11 +26,13 @@ function runQuiz () {
             if (basicFlash[counter].back == response.question) {
             //console.log(response.question)
             //console.log(basicFlash[counter].back)
-            counter++
             console.log("That is correct. The answer is " + basicFlash[counter].back)
+            counter++
+            runQuiz()
             } else {
                 console.log("That is incorrect. The answer is " + basicFlash[counter].back)
                 counter++
+                runQuiz()
             }
         })
     }
