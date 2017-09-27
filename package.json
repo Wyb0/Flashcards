@@ -1,0 +1,22 @@
+{
+  "name": "flashcards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wyb0/Flashcards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wyb0/Flashcards/issues"
+  },
+  "homepage": "https://github.com/Wyb0/Flashcards#readme",
+  "dependencies": {
+    "inquirer": "^3.3.0"
+  }
+}
