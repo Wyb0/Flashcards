@@ -12,15 +12,27 @@ var basicFlash = [
 var counter = 0;
 
 function runQuiz () {
-    for (i=0; i<basicFlash.length; i++) {
+    //for (i=0; i<basicFlash.length; i++) {
         if (counter < basicFlash.length) {
             inquirer.prompt([
                 {
                 type: "input",
-                message: "Question: " + (basicFlash[i].front),
+                message: "Question: " + (basicFlash[counter].front),
                 name: "question"
-                }
+                } 
         ])
+        .then(function (response) {
+            //console.log("User Answer: ", response, "Counter: ", counter)
+            if (basicFlash[counter].back == response.question) {
+            //console.log(response.question)
+            //console.log(basicFlash[counter].back)
+            counter++
+            console.log("That is correct. The answer is " + basicFlash[counter].back)
+            } else {
+                console.log("That is incorrect. The answer is " + basicFlash[counter].back)
+                counter++
+            }
+        })
     }
 }
 
