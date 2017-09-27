@@ -9,6 +9,23 @@ var basicFlash = [
 //console.log(basicFlash)
 
 
+var counter = 0;
+
+function runQuiz () {
+    for (i=0; i<basicFlash.length; i++) {
+        if (counter < basicFlash.length) {
+            inquirer.prompt([
+                {
+                type: "input",
+                message: "Question: " + (basicFlash[i].front),
+                name: "question"
+                }
+        ])
+    }
+}
+
+//run quiz
+runQuiz()
 
 
 
