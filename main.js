@@ -2,16 +2,18 @@ var basicCard = require("./basiccard.js")
 var inquirer = require("inquirer")
 
 var basicFlash = [
-    new basicCard("What is 2+2?", "4"),
-    new basicCard("What is 1+1?", "2"),
-    new basicCard("What is 3+3?", "6")
+    new basicCard("What is the the Orlando Magic Masoct's name?", "stuff"),
+    new basicCard("What year was the Orlando Magic established?", "1989"),
+    new basicCard("What year was the last time the Orlando Magic appeared in the NBA Finals?", "2010")
+    new basicCard("What is the name of the arena the Orlando Magic play in?", "Amway")
+    new basicCard("How many past Orlando Magic players are in the NBA Hall of Fame?", "4")
 ]
 //console.log(basicFlash)
-
 
 var counter = 0;
 
 function runQuiz () {
+    console.log("Welcome to the Orlando Magic quiz!")
     //for (i=0; i<basicFlash.length; i++) {
         if (counter < basicFlash.length) {
             inquirer.prompt([
