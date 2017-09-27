@@ -4,8 +4,8 @@ var inquirer = require("inquirer")
 var basicFlash = [
     new basicCard("What is the the Orlando Magic Masoct's name?", "stuff"),
     new basicCard("What year was the Orlando Magic established?", "1989"),
-    new basicCard("What year was the last time the Orlando Magic appeared in the NBA Finals?", "2010")
-    new basicCard("What is the name of the arena the Orlando Magic play in?", "Amway")
+    new basicCard("What year was the last time the Orlando Magic appeared in the NBA Finals?", "2010"),
+    new basicCard("What is the name of the arena the Orlando Magic play in?", "Amway"),
     new basicCard("How many past Orlando Magic players are in the NBA Hall of Fame?", "4")
 ]
 //console.log(basicFlash)
